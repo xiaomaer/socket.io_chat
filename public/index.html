@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用socket.io和express创建一个聊天工具</title>
+     <link rel="stylesheet" href="style.css"/>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <div id="show"></div>
+    <div id="showlist">
+        <ul id="namelist"></ul>
+    </div>
+    <div id="clear"></div>
+    <form action="#" id="addname">
+        <label for="uname">昵称：</label>
+        <input type="text" id="uname" class="input"/>
+        <input type="submit" value="添加昵称" class="btn"/>
+    </form>
+    <form action="#" id="addmessage">
+        <label for="message">消息：</label>
+        <input type="text" id="message" class="input"/>
+        <input type="submit" value="发送消息" class="btn"/>
+    </form>
+</div>
+<!--如果客户端和服务器在同一服务器上，将会自动提供socket.io客户端的库-->
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
