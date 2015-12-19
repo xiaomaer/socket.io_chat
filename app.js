@@ -9,7 +9,7 @@ var port = process.env.PORT || 3000;
 server.listen(port, function () {
     console.log('server listening at port %d', port);
 });
-//创建路由规则，客户端连接时，发送消息给客户端
+//创建路由规则，客户端连接时（即打开http://127.0.0.1:3000/index.html），发送消息给客户端
 app.use(express.static(__dirname + '/public'));//定义静态文件目录
 
 //将socket.io绑定到express服务器
